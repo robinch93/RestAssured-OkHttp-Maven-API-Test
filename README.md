@@ -12,7 +12,7 @@ Different API's are tested for different condition as mentioned in the excel she
 - Rest API Test : Here, different Rest API's are tested for various validations, like, status line, status code, to print headers, to validate JSON response, 
 etc with GET and POST methods. 
 
->> [RestAssuredAPITesting/src/test/java/restAssuredTest]https://github.com/robinch93/RestAssured-Testng-Maven-API-Test/tree/master/RestAssuredAPITesting/src/test/java/restAssuredTest)
+>> [RestAssuredAPITesting/src/test/java/restAssuredTest](https://github.com/robinch93/RestAssured-Testng-Maven-API-Test/tree/master/RestAssuredAPITesting/src/test/java/restAssuredTest)
 
 - Data Driven Test : This test case make use of data provider annotation to extract data form an excel data sheet and create employee data for all the employees 
 given in the excel sheet.  
