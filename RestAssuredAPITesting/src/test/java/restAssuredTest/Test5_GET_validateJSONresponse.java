@@ -1,3 +1,4 @@
+package restAssuredTest;
 import java.util.HashMap;
 
 import org.testng.annotations.Test;

@@ -1,3 +1,4 @@
+package restAssuredTest;
 import org.json.simple.JSONObject;
 import org.omg.PortableInterceptor.SUCCESSFUL;
 import org.testng.annotations.Test;
@@ -22,10 +23,10 @@ public class Test2_POST_Request {
 		// request payload sending along with POST request.
 		JSONObject requestParams = new JSONObject();
 		requestParams.put("FirstName", "John");
-		requestParams.put("LastName", "Hena");
-		requestParams.put("UserName", "JohnHena");
-		requestParams.put("Password", "JohnHena");
-		requestParams.put("Email", "jognhena@gmail.com");
+		requestParams.put("LastName", "Lena");
+		requestParams.put("UserName", "JohnLena");
+		requestParams.put("Password", "JohnLena");
+		requestParams.put("Email", "jognlena@gmail.com");
 		
 		httpRequest.header("Contect-Type", "application/json");
 		
