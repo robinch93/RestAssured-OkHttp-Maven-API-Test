@@ -9,8 +9,7 @@ This project is an example of API testing with support of testng and maven.
 
 Different API's are tested for different condition as mentioned in the excel sheet:
 
-- Rest API Test : Here, different Rest API's are tested for various validations, like, status line, status code, to print headers, to validate JSON response, 
-etc with GET and POST methods. 
+- Rest API Test : Here, different Rest API's are tested for various validations, like, status line, status code, to print headers, to validate JSON response, etc with GET and POST methods. 
 
 >> [RestAssuredAPITesting/src/test/java/restAssuredTest](https://github.com/robinch93/RestAssured-Testng-Maven-API-Test/tree/master/RestAssuredAPITesting/src/test/java/restAssuredTest)
 
