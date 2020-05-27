@@ -22,7 +22,7 @@ given in the excel sheet.
 
 >> [RestAssuredAPITesting/src/test/java/restAssuredBDDtest](https://github.com/robinch93/RestAssured-Testng-Maven-API-Test/tree/master/RestAssuredAPITesting/src/test/java/restAssuredBDDtest)
 
-- Maven POM.xml : Dependencies like Apache poi, Testng, Rest Assured, JSON simple, Hamcrest are included in the project using pom xml file. 
+- Maven POM.xml : Dependencies like Testng, Rest Assured, JSON simple, Hamcrest, Apache poi are included in the project using pom xml file. 
 
 >> [RestAssuredAPITesting/pom.xml](https://github.com/robinch93/RestAssured-Testng-Maven-API-Test/RestAssuredAPITesting/pom.xml)
 
