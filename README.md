@@ -24,7 +24,7 @@ given in the excel sheet.
 
 - Maven POM.xml : Dependencies like Testng, Rest Assured, JSON simple, Apache poi, Hamcrest are included in the project using pom xml file. 
 
->> [RestAssuredAPITesting/pom.xml](https://github.com/robinch93/RestAssured-Testng-Maven-API-Test/RestAssuredAPITesting/pom.xml)
+>> [RestAssuredAPITesting/pom.xml](https://github.com/robinch93/RestAssured-Testng-Maven-API-Test/blob/master/RestAssuredAPITesting/pom.xml)
 
 
 
