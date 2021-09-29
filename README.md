@@ -4,7 +4,7 @@ This project is an example of REST API testing with rest-assured and okhttp rest
 **Prerequisite** 
 - [Docker](https://docs.docker.com/get-docker/)
 - Run the rest api server on localhost, by runnning following command.</br>
-  `git clone https://github.com/robinch93/rest-api.git && docker-compose up -d`
+  `git clone https://github.com/robinch93/rest-api.git && cd rest-api && docker-compose up -d`
 
 **How to Run** </br>
 
