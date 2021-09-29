@@ -13,8 +13,7 @@ This project is an example of REST API testing with rest-assured and okhttp rest
 
 There are three groups:
 
-- Data Driven Test : This test reads employee data form an excel data sheet and create all employees while validating the responses. 
-given in the excel sheet. </br>
+- Data Driven Test : This test reads employee data form an excel data sheet and create all employees while validating the responses.</br>
 `docker-compose exec test mvn surefire:test -Dgroups=data-driven`
 
 - OkHttp Test : These tests make use of okhttp rest client to perform crud operations and doing validations.</br>
