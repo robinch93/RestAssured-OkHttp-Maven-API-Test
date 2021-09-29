@@ -1,6 +1,7 @@
 package restAssuredBDDtest;
 
 import org.apache.commons.lang3.RandomStringUtils;
+import java.util.Random; 
 
 public class RestUtils {
 
@@ -43,5 +44,12 @@ public class RestUtils {
 		String generatedString = RandomStringUtils.randomNumeric(2);
 		return (generatedString);
 	}
-	
+
+	public static String getEmpCity() {
+		final String[] city_names = {"Munich", "Berlin", "Milan", "Brussels", "Zurich"};
+		Random random = new Random();
+		int index = random.nextInt(city_names.length);
+		return city_names[index];
+	}
+
 }

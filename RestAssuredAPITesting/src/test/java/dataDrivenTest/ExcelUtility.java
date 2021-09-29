@@ -27,6 +27,7 @@ public class ExcelUtility {
 		int rowCount = ws.getLastRowNum();
 		wb.close();
 		fi.close();
+		System.out.println("row count is: " + rowCount);
 		return rowCount;
 	}
 
@@ -38,6 +39,7 @@ public class ExcelUtility {
 		int cellCount = row.getLastCellNum();
 		wb.close();
 		fi.close();
+		System.out.println("column count is: " + cellCount);
 		return cellCount;
 	}
 
@@ -57,6 +59,7 @@ public class ExcelUtility {
 		}
 		wb.close();
 		fi.close();
+		System.out.println("data returned is: " + data);
 		return data;
 	}
 
