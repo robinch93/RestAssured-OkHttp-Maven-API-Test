@@ -1,30 +1,29 @@
-# RestAssured-Testng-Maven-API-Test
-This project is an example of API testing with support of testng and maven.  
+# RestAssured-OkHttp-API-Test
+This project is an example of REST API testing with rest-assured and okhttp rest clients with the support of testng and maven.  
 
 **Prerequisite** 
-- Maven 
-- Eclipse
-- TestNG
-- API documentation
+- [Docker](https://docs.docker.com/get-docker/)
+- Run the rest api server on localhost, by runnning following command.</br>
+  `git clone https://github.com/robinch93/rest-api.git && docker-compose up -d`
 
-Different API's are tested for different condition as mentioned in the excel sheet:
+**How to Run** </br>
 
-- Rest API Test : Here, different Rest API's are tested for various validations, like, status line, status code, to print headers, to validate JSON response, etc with GET and POST methods. 
+- `git clone https://github.com/robinch93/RestAssured-Testng-Maven-API-Test.git`
+- `docker-compose up -d`
 
->> [RestAssuredAPITesting/src/test/java/restAssuredTest](https://github.com/robinch93/RestAssured-Testng-Maven-API-Test/tree/master/RestAssuredAPITesting/src/test/java/restAssuredTest)
+There are three groups:
 
-- Data Driven Test : This test case make use of data provider annotation to extract data form an excel data sheet and create employee data for all the employees 
-given in the excel sheet.  
+- Data Driven Test : This test reads employee data form an excel data sheet and create all employees while validating the responses. 
+given in the excel sheet. </br>
+`docker-compose exec test mvn surefire:test -Dgroups=data-driven`
 
->> [RestAssuredAPITesting/src/test/java/dataDrivenTest](https://github.com/robinch93/RestAssured-Testng-Maven-API-Test/tree/master/RestAssuredAPITesting/src/test/java/dataDrivenTest)
+- OkHttp Test : These tests make use of okhttp rest client to perform crud operations and doing validations.</br>
+`docker-compose exec test mvn surefire:test -Dgroups=okhttp`
 
-- API BDD Test : These test cases are writeen in BDD(Business Driven Developement) approach for testing API's.  
+- Rest-Assured Test : These tests make api requests using rest-assured and do validations. </br>
+ `docker-compose exec test mvn surefire:test -Dgroups=rest-assured`
 
->> [RestAssuredAPITesting/src/test/java/restAssuredBDDtest](https://github.com/robinch93/RestAssured-Testng-Maven-API-Test/tree/master/RestAssuredAPITesting/src/test/java/restAssuredBDDtest)
 
-- Maven POM.xml : Dependencies like Testng, Rest Assured, JSON simple, Apache poi, Hamcrest are included in the project using pom xml file. 
-
->> [RestAssuredAPITesting/pom.xml](https://github.com/robinch93/RestAssured-Testng-Maven-API-Test/blob/master/RestAssuredAPITesting/pom.xml)
 
 
 
