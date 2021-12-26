@@ -1,12 +1,28 @@
-version: '3.4'
+version: "3.4"
 
 services:
-    test:
-        build: .
-        container_name: test
-        command: tail -f /dev/null
-        networks:
-            - rest
-        
+  test:
+    build: .
+    container_name: test
+    command: tail -f /dev/null
+    networks:
+      - rest
+
+  jenkins:
+    image: jenkins/jenkins:lts
+    container_name: jenkins
+    user: root
+    # command: sh -c 'apt-get update && apt-get install -y maven'
+    ports:
+      - 8085:8080
+      - 50000:50000
+    volumes:
+      - jenkins_home:/var/jenkins_home
+    networks:
+      - rest
+
 networks:
-    rest:
+  rest:
+
+volumes:
+  jenkins_home:
