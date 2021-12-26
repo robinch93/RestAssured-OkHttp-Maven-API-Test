@@ -9,15 +9,21 @@ services:
       - rest
 
   jenkins:
-    image: jenkins/jenkins:lts
+    build: ./jenkins/
     container_name: jenkins
     user: root
-    # command: sh -c 'apt-get update && apt-get install -y maven'
+    privileged: true
+    pull_policy: never
+    env_file: .env
+    environment:
+      - JENKINS_ADMIN_ID:$JENKINS_ADMIN_ID
+      - JENKINS_ADMIN_PASSWORD:JENKINS_ADMIN_PASSWORD
     ports:
       - 8085:8080
       - 50000:50000
     volumes:
       - jenkins_home:/var/jenkins_home
+      - /var/run/docker.sock:/var/run/docker.sock
     networks:
       - rest
 
